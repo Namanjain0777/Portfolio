@@ -98,6 +98,17 @@ input, textarea {
   font: inherit;
 }
 
+.avatar-box img {
+  width: 180px;        /* Width and height should be the same */
+  height: 180px;
+  border-radius: 50%;  /* Makes the image round */
+  object-fit: cover;   /* Ensures the image fits inside the circle */
+  overflow: hidden;    /* (This won't do much directly on img, more useful on .avatar-box) */
+  border: 2px solid #4CAF50; /* Optional border for styling */
+}
+
+
+
 ::selection {
   background: var(--orange-yellow-crayola);
   color: var(--smoky-black);
